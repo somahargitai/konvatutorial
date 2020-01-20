@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import KonvaComponentHooked from './ColorCube';
+import Kanvas from './Kanvas';
+import ColorCubeItem from './ColorCubeItem';
+import DragTextItem from './DragTextItem';
 
 function App() {
   return (
@@ -18,7 +20,10 @@ function App() {
         >
           Learn Konva
         </a>
-        <KonvaComponentHooked />
+        <Kanvas>
+          <ColorCubeItem />
+          <DragTextItem />
+        </Kanvas>
       </header>
     </div>
   );
